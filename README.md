@@ -58,6 +58,7 @@ In `sumaform` you define a set of virtual machines in a `main.tf` configuration 
 Refer to specific READMEs to get started:
  * [libvirt README](backend_modules/libvirt/README.md)
  * [AWS README](backend_modules/aws/README.md)
+ * [SSH README](backend_modules/ssh/README.md)
  * [NULL README](backend_modules/null/README.md)
 
 ## Typical use
