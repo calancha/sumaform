@@ -216,7 +216,7 @@ module "min-kvm" {
 
   base_configuration = module.base.configuration
   product_version    = var.product_version
-  image              = lookup(local.images, "min-kvm", "sles15sp1")
+  image              = lookup(local.images, "min-kvm", "sles15sp1o")
   name               = lookup(local.names, "min-kvm", "min-kvm")
 
   server_configuration = local.minimal_configuration
@@ -236,7 +236,7 @@ module "min-xen" {
 
   base_configuration = module.base.configuration
   product_version    = var.product_version
-  image              = lookup(local.images, "min-xen", "sles15sp1")
+  image              = lookup(local.images, "min-xen", "sles15sp1o")
   name               = lookup(local.names, "min-xen", "min-xen")
   hypervisor         = "xen"
 
