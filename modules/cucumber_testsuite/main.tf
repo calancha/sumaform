@@ -204,7 +204,7 @@ module "pxeboot-minion" {
   quantity = contains(local.hosts, "pxeboot-minion") ? 1 : 0
 
   base_configuration = module.base.configuration
-  image              = lookup(local.images, "pxeboot-minion", "sles12sp3")
+  image              = lookup(local.images, "pxeboot-minion", "sles12sp3o")
   name               = lookup(local.names, "pxeboot-minion", "min-pxeboot")
   provider_settings  = lookup(local.provider_settings_by_host, "pxeboot-minion", {})
 }

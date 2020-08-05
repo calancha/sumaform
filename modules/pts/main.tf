@@ -3,7 +3,7 @@ module "server" {
   name               = var.suse_manager_name
   base_configuration = var.base_configuration
   product_version    = "3.2-nightly"
-  image              = "sles12sp3"
+  image              = "sles12sp3o"
   auto_accept        = false
   monitored          = true
   pts                = true
