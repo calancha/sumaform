@@ -35,9 +35,6 @@ module_server_applications_pool_repo:
   pkgrepo.managed:
     - baseurl: http://{{ grains.get("mirror") | default("download.suse.de/ibs", true) }}/SUSE/Products/SLE-Module-Basesystem/15-SP3/x86_64/product/
 
-module_server_applications_update_repo:
-  pkgrepo.managed:
-    - baseurl: http://{{ grains.get("mirror") | default("download.suse.de/ibs", true) }}/SUSE/Updates/SLE-Module-Basesystem/15-SP3/x86_64/update/
 {% endif %}
 {% endif %}
 
