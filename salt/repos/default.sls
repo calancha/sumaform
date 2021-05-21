@@ -360,9 +360,10 @@ os_update_repo:
     - baseurl: http://{{ grains.get("mirror") | default("download.suse.de/ibs", true) }}/SUSE/Updates/SLE-Module-Basesystem/15-SP2/x86_64/update/
 
 # Already made in advance but empty now:
-os_ltss_repo:
-  pkgrepo.managed:
-    - baseurl: http://{{ grains.get("mirror") | default("download.suse.de/ibs", true) }}/SUSE/Updates/SLE-Product-SLES/15-SP2-LTSS/x86_64/update/
+{# TODO: uncomment it after been included in the mirror #}
+{# os_ltss_repo: #}
+{#   pkgrepo.managed: #}
+{#     - baseurl: http://{{ grains.get("mirror") | default("download.suse.de/ibs", true) }}/SUSE/Updates/SLE-Product-SLES/15-SP2-LTSS/x86_64/update/ #}
 
 {% endif %} {# '15.2' == grains['osrelease'] #}
 
